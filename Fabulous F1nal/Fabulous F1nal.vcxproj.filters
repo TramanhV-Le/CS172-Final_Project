@@ -23,8 +23,17 @@
     <ClInclude Include="Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cl4sses.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="cl4ssQu3stions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cl4ssStud3nts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cl4ssT3sts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cl4ssCl4ssAverage.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

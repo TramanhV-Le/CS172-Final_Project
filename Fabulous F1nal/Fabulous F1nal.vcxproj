@@ -145,7 +145,10 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cl4sses.h" />
+    <ClInclude Include="cl4ssCl4ssAverage.h" />
+    <ClInclude Include="cl4ssQu3stions.h" />
+    <ClInclude Include="cl4ssStud3nts.h" />
+    <ClInclude Include="cl4ssT3sts.h" />
     <ClInclude Include="Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
