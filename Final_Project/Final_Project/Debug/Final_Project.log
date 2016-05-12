@@ -1,0 +1,12 @@
+﻿Build started 5/11/2016 7:01:10 PM.
+     1>Project "C:\Users\tle19\Desktop\Final_Project\Final_Project\Final_Project\Final_Project.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\tle19\desktop\final_project\final_project\final_project\source.cpp(14): error C3867: 'Stud3nts::getNumberAnswersCorrect': non-standard syntax; use '&' to create a pointer to member
+     1>c:\users\tle19\desktop\final_project\final_project\final_project\source.cpp(16): error C3867: 'Stud3nts::getNumberAnswersCorrect': non-standard syntax; use '&' to create a pointer to member
+     1>Done Building Project "C:\Users\tle19\Desktop\Final_Project\Final_Project\Final_Project\Final_Project.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.30

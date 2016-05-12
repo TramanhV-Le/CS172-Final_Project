@@ -33,7 +33,7 @@ public:
 	void setNumberAnswersCorrect(int newNumbCorrect);
 	char *Ans(int num);
 	int compareAns(char *pointer, char *correctAnswerPointer, int num);
-	double Avg(int numb[], int size);
+	double Avg(int *num, int size);
 };
 
 class Cl4ssAverage

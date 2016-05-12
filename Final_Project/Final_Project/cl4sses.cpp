@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cmath>
 #include "cl4sses.h"
 
 
@@ -40,18 +41,20 @@ int T3sts::countTest()
 {
 	int x;
 	x++;
+	return x;
 }
 
 char * T3sts::correctAns(int num)
 {
-	char* pointArr = new char[num];
+	cout << "Input Answer Key \n ";
+	char* pointArr1 = new char[num];
 	char x;
 	for (int i = 0; i < num; i++)
 	{
 		cin >> x;
-		pointArr[i] = x;
+		pointArr1[i] = x;
 	}
-	return pointArr;
+	return pointArr1;
 }
 
 int Stud3nts::getIDNumb3r()
@@ -78,6 +81,7 @@ char * Stud3nts::Ans(int num)
 {
 	char* pointArr = new char[num];
 	char x;
+	cout << "Inputs students answers.\n";
 	for (int i = 0; i < num; i++)
 	{
 		cin >> x;
@@ -98,11 +102,11 @@ int Stud3nts::compareAns(char *pointer, char *correctAnswerPointer, int num)
 	return NumberAnswerCorrect;
 }
 
-double Stud3nts::Avg(int numb[], int size)
+double Stud3nts::Avg(int *num, int size)
 {
 	double avg = 0;
 	double sum = 0;
-	for (int* current = numb; current < numb + size; current++)
+	for (int* current = num; current < num + size; current++)
 	{
 		sum += *current;
 	}
