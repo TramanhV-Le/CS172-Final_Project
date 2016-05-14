@@ -18,13 +18,19 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cl4sses.cpp">
+    <ClCompile Include="Stud3nts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T3st.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cl4sses.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="T3st.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stud3nts.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

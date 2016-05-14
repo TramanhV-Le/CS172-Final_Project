@@ -2,7 +2,9 @@
 #include <string>
 #include <cmath>
 #include <fstream>
-#include "cl4sses.h"
+#include <iomanip>
+#include "Stud3nts.h"
+#include "T3st.h"
 
 using namespace std;
 
@@ -11,6 +13,8 @@ int main() {
 	int numberofStudnets = 0;
 	int ID = 0;
 	int numofQuestions = 0;
+	int TotalNumberofQuestions = 0;
+	double OverallGrade = 0;
 
 	cout << "How many test? ";
 	cin >> numberofTest;
@@ -26,6 +30,7 @@ int main() {
 	{
 		cout << "How many Questions? ";
 		cin >> numofQuestions;
+		TotalNumberofQuestions = TotalNumberofQuestions + numofQuestions;
 		cout << endl;
 		newTest[x].correctAns(numofQuestions);
 
@@ -37,7 +42,28 @@ int main() {
 			newStudent[i].Ans(numofQuestions);
 			newStudent[i].compareAns(newStudent[i].getAns(numofQuestions), newTest[x].getCorrectAns(numofQuestions), numofQuestions);
 			cout << "Student " << newStudent[i].getIDNumb3r() << " test score is: ";
-			cout << newStudent[i].getNumberAnswersCorrect() << endl;
+			cout << newStudent[i].getNumAnsCorrect() << endl;
+			
 		}
 	}
+	
+	ofstream fout;
+	fout.open("Y.txt");
+
+	if (fout.fail())
+	{
+		cout << "can't open file" << endl;
+		return 0;
+	}
+	fout << "Student ID " << setw(15);
+	fout << " Overall Grade" << endl;
+	for (int i = 0; i < numberofStudnets;i++)
+	{
+		fout << newStudent[i].getIDNumb3r();
+		fout << setw(20);
+		OverallGrade = (newStudent[i].getNumberAnswersCorrect() / double(TotalNumberofQuestions)) * 100;
+		fout << OverallGrade;
+		fout << endl;
+	}
+	fout.close();
 }
