@@ -9,61 +9,61 @@
 using namespace std;
 
 int main() {
-	int numberofTest = 0;
-	int numberofStudnets = 0;
-	int ID = 0;
-	int numofQuestions = 0;
+	int numberofTest = 0; // Starts at 0 tests
+	int numberofStudents = 0;
+	int ID = 0; // ID can be any number or series of ints
+	int NumofQu3stions = 0;
 	int TotalNumberofQuestions = 0;
-	double OverallGrade = 0;
+	double OverallGrade = 0; // Base average from zero.
 
-	cout << "How many test? ";
+	cout << "How many tests are being graded? "; // Prompts user for number of tests
 	cin >> numberofTest;
 	cout << endl;
 
-	cout << "How many students? ";
-	cin >> numberofStudnets;
+	cout << "How many students took the test? "; // Prompts user for the number of students
+	cin >> numberofStudents;
 	cout << endl; 
 
-	Stud3nts  *newStudent = new Stud3nts[numberofStudnets];
+	Stud3nts  *newStud3nt = new Stud3nts[numberofStudents]; // Pointer allows user to input multiple students
 	T3sts *newTest = new T3sts[numberofTest];
-	for (int x = 0; x < numberofTest; x++)
+	for (int x = 0; x < numberofTest; x++)  
 	{
-		cout << "How many Questions? ";
-		cin >> numofQuestions;
-		TotalNumberofQuestions = TotalNumberofQuestions + numofQuestions;
+		cout << "How many questions are in the test? "; // Allows user to input multiple tests for each student
+		cin >> NumofQu3stions;
+		TotalNumberofQuestions = TotalNumberofQuestions + NumofQu3stions; //cl3v3r girl// 
 		cout << endl;
-		newTest[x].correctAns(numofQuestions);
+		newTest[x].correctAns(NumofQu3stions); // New test answers will use counter to keep track of correct answers.
 
-		for (int i = 0; i < numberofStudnets; i++)
+		for (int i = 0; i < numberofStudents; i++) 
 		{
-			cout << "Input the students ID\n";
+			cout << "Input the students ID: "; // Asks for the students ID to keep track of their correct answers
 			cin >> ID;
-			newStudent[i].setIDNumb3r(ID);
-			newStudent[i].Ans(numofQuestions);
-			newStudent[i].compareAns(newStudent[i].getAns(numofQuestions), newTest[x].getCorrectAns(numofQuestions), numofQuestions);
-			cout << "Student " << newStudent[i].getIDNumb3r() << " test score is: ";
-			cout << newStudent[i].getNumAnsCorrect() << endl;
+			newStud3nt[i].setIDNumb3r(ID);
+			newStud3nt[i].Ans(NumofQu3stions);
+			newStud3nt[i].compareAns(newStud3nt[i].getAns(NumofQu3stions), newTest[x].getCorr3ctAns(NumofQu3stions), NumofQu3stions);
+			cout << "Student " << newStud3nt[i].getIDNumb3r() << " test score is: "; // Displays each individual student's grade
+			cout << newStud3nt[i].getNumAnsCorrect() << endl;
 			
-		}
+		} // Please give us an 'A'
 	}
 	
-	ofstream fout;
-	fout.open("Y.txt");
+	ofstream fout; // Outputs the students' answers into a text file
+	fout.open("Overall Grade.txt");
 
 	if (fout.fail())
 	{
-		cout << "can't open file" << endl;
+		cout << "can't open file" << endl; // If fail, app will display message
 		return 0;
 	}
-	fout << "Student ID " << setw(15);
-	fout << " Overall Grade" << endl;
-	for (int i = 0; i < numberofStudnets;i++)
+	fout << "Student ID " << setw(15); // Includes the Student ID
+	fout << " Overall Grade" << endl; // Displays their overall grade for all inputted tests.
+	for (int i = 0; i < numberofStudents;i++) // This loop cycles through stud3nts, displaying their resp3ctive perc3ntage // 
 	{
-		fout << newStudent[i].getIDNumb3r();
+		fout << newStud3nt[i].getIDNumb3r(); 
 		fout << setw(20);
-		OverallGrade = (newStudent[i].getNumberAnswersCorrect() / double(TotalNumberofQuestions)) * 100;
+		OverallGrade = (newStud3nt[i].getNumberAnswersCorrect() / double(TotalNumberofQuestions)) * 100; // Takes the percentage to show out of 100%
 		fout << OverallGrade;
 		fout << endl;
 	}
-	fout.close();
+	fout.close(); // Ends the text file
 }
