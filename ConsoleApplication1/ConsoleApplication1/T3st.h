@@ -18,7 +18,7 @@ public:
 	void setPostition(int Pos);
 	int countTest();
 	char *correctAns(int num);
-	char * getCorrectAns(int size);
+	char * getCorr3ctAns(int size);
 };
 
 #endif

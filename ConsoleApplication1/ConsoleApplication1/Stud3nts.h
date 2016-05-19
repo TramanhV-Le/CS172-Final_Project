@@ -3,7 +3,7 @@
 class Stud3nts
 {
 private:
-	int IDNumb3r;
+	int IDNumb3r; 
 	int TotalNumberAnswerCorrect = 0;
 	char * pointArr;
 	int numberAnsCorrect;

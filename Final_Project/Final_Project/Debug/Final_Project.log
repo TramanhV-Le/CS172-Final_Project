@@ -1,9 +1,8 @@
-﻿Build started 5/18/2016 7:41:29 PM.
+﻿Build started 5/18/2016 9:48:04 PM.
      1>Project "C:\Users\mgalle19\Documents\GitHub\Final_Project\Final_Project\Final_Project\Final_Project.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\ConsoleApplication1\ConsoleApplication1\Source.cpp ..\..\ConsoleApplication1\ConsoleApplication1\Stud3nts.cpp ..\..\ConsoleApplication1\ConsoleApplication1\T3st.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\ConsoleApplication1\ConsoleApplication1\Source.cpp ..\..\ConsoleApplication1\ConsoleApplication1\T3st.cpp
          T3st.cpp
-         Stud3nts.cpp
          Source.cpp
          Generating Code...
      1>c:\users\mgalle19\documents\github\final_project\consoleapplication1\consoleapplication1\t3st.cpp(41): warning C4700: uninitialized local variable 'x' used
@@ -11,10 +10,9 @@
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\mgalle19\Documents\GitHub\Final_Project\Final_Project\Debug\Final_Project.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\mgalle19\Documents\GitHub\Final_Project\Final_Project\Debug\Final_Project.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\mgalle19\Documents\GitHub\Final_Project\Final_Project\Debug\Final_Project.lib" /MACHINE:X86 Debug\Source.obj
          Debug\Stud3nts.obj
          Debug\T3st.obj
-         LINK : C:\Users\mgalle19\Documents\GitHub\Final_Project\Final_Project\Debug\Final_Project.exe not found or not built by the last incremental link; performing full link
          Final_Project.vcxproj -> C:\Users\mgalle19\Documents\GitHub\Final_Project\Final_Project\Debug\Final_Project.exe
      1>Done Building Project "C:\Users\mgalle19\Documents\GitHub\Final_Project\Final_Project\Final_Project\Final_Project.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.11
+Time Elapsed 00:00:01.52
