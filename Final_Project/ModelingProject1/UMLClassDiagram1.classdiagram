@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="246e5a27-36a2-4b1a-ae16-55d3fb9438f4" name="UMLClassDiagram1" linkedPackageId="02d60ff7-ba47-493a-8c97-e745aed52cae" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4fe5cc0a-f00c-4518-9397-939d53ff39c3">
+      <profileInstance Id="573ddfcb-2c7f-42c3-a8e7-5953041e03f4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6760d07a-b399-4846-b34c-e94bebafb4bc">
+      <profileInstance Id="fae88bfd-7c66-4782-94c6-b4f0344c732f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a48784ba-3ea7-4f6a-8200-67d4d3aa4976" name="Stud3nts" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="33827fe5-05a7-4c75-b223-338d74b94192" />
+        <ownedAttributesInternal>
+          <property Id="3c40e2db-9c15-47a6-9e87-560ae7eebe29" name="int ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="75977b59-e1d8-4281-a33b-deadf1a2ebdf" />
+          </property>
+          <property Id="a3e65c3c-766d-467d-a2b9-9adc059cfe3f" name="int TotalNumberAnswersCorrect" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="83324e61-e7e2-43d2-b5a3-27ea9c1054bb" />
+          </property>
+          <property Id="13c5a7fd-46cf-480f-8f7f-12c08f78d307" name="char *pointArr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="77fa0a43-a6c4-4bd0-ba34-fea1e0172af9" />
+          </property>
+          <property Id="eae57707-6220-4a77-a49b-86413334f880" name="int numberAnsCorrect" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="19b90c26-4b57-4add-b8f4-6abfa48e2217" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="4f843724-da47-4b92-910f-21e5ef8c83b8" name="int getIdNumb3r" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5f5ed341-cc92-4904-9d5b-f1ece7875300" />
+          </operation>
+          <operation Id="d7956ea5-3961-4bd4-b511-5459d7420f48" name="void setIDnumb3r" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e8ef18dd-5747-4b24-8e3e-966069fc06e9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5106c26f-8bd6-4856-b1fe-c168481bbd47" name="int newID" direction="In" isUnique="false">
+                  <elementDefinition Id="16857166-b590-4770-b6e9-59320d182f6e" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="527b600b-b598-41cd-92ac-8675aec38347" name="in getNumberAnswersCorrect" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="731f48ff-1a8e-4e9d-a967-6494004174c7" />
+          </operation>
+          <operation Id="09014cfd-068f-45a2-99e1-7a271bd80112" name="void setNumberAnswersCorrect" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="53a35f19-c833-4f17-a369-812d8608496b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="af2a9fe6-26b0-495f-8022-13ab9d8a499b" name="int newNumbCorrect" direction="In" isUnique="false">
+                  <elementDefinition Id="de1a376c-bb26-4233-a81f-4ea000b0a31e" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b6d5ac1d-ee9f-478e-bfcc-b8c7f169521e" name="char *Ans" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3f4c20b1-7d69-4a03-8f6a-a5038cda1192" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a77ffd60-a24b-4ee4-999c-bbb1f780ba06" name="int num" direction="In" isUnique="false">
+                  <elementDefinition Id="82f2f97e-2331-4a9e-beb3-96b681861cae" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="358e0662-dae0-4c77-8f3b-07e63d6a9db2" name="int compareAns" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eae95cd1-4f47-48b4-adbd-03864e0220c1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1fa833c7-e65c-4df3-8b29-7ad5d1c6397d" name="char *pointer" direction="In" isUnique="false">
+                  <elementDefinition Id="73ad9cda-872f-4a68-89cb-c3e4b6c0325b" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6fa0c3c6-3136-4dea-92af-135283f87f81" name="Char*correctAnswerPionter" direction="In" isUnique="false">
+                  <elementDefinition Id="326eec71-899d-4729-9df9-de18ce11d6e1" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6b66d7ce-6669-457e-b5a5-78bd13397f0c" name="int num" direction="In" isUnique="false">
+                  <elementDefinition Id="6ac111be-549e-4979-b123-041aafca8a30" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="701c47aa-2ff5-4939-8ee1-e9932579e0f1" name="void Avg" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cde5bb1e-45fb-47f9-b595-a67e5117d02d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="089b99ef-01bc-4f9b-8f74-528323dcca85" name="int size" direction="In" isUnique="false">
+                  <elementDefinition Id="1c73d682-d66c-4079-981f-4c3520eb3028" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d71d1e08-ea6b-40c5-989d-8a5f22202098" name="char *getAns" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a208854f-5b59-4a11-82c6-810a99b9282a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3af5848e-7284-4279-a4ca-a68282ce3d9c" name="int size" direction="In" isUnique="false">
+                  <elementDefinition Id="30aa6b96-b07d-4c83-a03e-c2945f81a0c9" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="eb8bd4c8-e805-4e58-bfb2-9cb5e7db96c6" name="int getNumAnsCorrect" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c3a6ab69-c96f-4a4e-98e1-d0aab9fff4da" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="07f11130-fad8-4db6-9eaa-dfc8eef7cdac" name="T3st" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d4c87026-e1f9-463f-b89d-7bd6cb5667c4" />
+        <targetEnds>
+          <association Id="90066904-1587-4f96-ab19-743edad18066" isDerived="false" sourceEndRoleName="T3st" targetEndRoleName="Stud3nts" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a48784ba-3ea7-4f6a-8200-67d4d3aa4976" LastKnownName="Stud3nts" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b18b5c4-1d53-449f-a349-9445b2ee0b4d" name="T3st" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dad5e21f-b9fd-4172-b107-4dbfa9e13cf1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62a55682-460e-46f8-b087-ce900ea07259" name="Stud3nts" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="17ce31b3-adfb-4845-9752-fb118fec28d2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c928b594-2d65-4aec-af6e-f79b0c68c9a9" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="89c49d60-82d9-455f-880a-dd2888a909a8" name="Attribute1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="07cd7acf-6cb1-4f68-aac4-d8819fc8c847" />
+          </property>
+          <property Id="faad7abc-ec0d-46eb-b7a2-65672349602a" name="int position" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="32f1615d-b37b-4e03-bff3-89ce5c9e4e48" />
+          </property>
+          <property Id="b7a466b0-f010-40b6-a4a8-5376bb433e12" name="char Answer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3470de1d-972f-4919-b43e-7918a5c01cb2" />
+          </property>
+          <property Id="9efcd9a6-78de-4019-8601-b7e38a0494f9" name="int numb3rofQuestions" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5429e996-42f9-4eee-bbf7-7ecde4bc7de9" />
+          </property>
+          <property Id="4ba5d1fe-293d-49a5-97cb-27c7566ed53c" name="char *pointArr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ceb11605-3913-4c88-ba70-f53a68c5e9b6" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8d934c48-5008-473d-a2d9-c479dc220094" name="int getNumb3rofQuestions" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="015fde78-9fbd-4ad0-8ece-c6e8bc010607" />
+          </operation>
+          <operation Id="44b8b21a-d2f4-4ea6-bbfc-9c0762cef519" name="void setNumb3rofQuestions" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e74194a4-6bbc-4309-9198-9b06bab9f19e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6492c257-7674-4080-8248-e612313c0059" name="int numofQuestions" direction="In" isUnique="false">
+                  <elementDefinition Id="98b4e1e7-60d6-4137-9b20-d1e240359329" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="79779927-1773-40c4-846d-bc20ac6514c5" name="char getAnswer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="86eb2846-fced-473c-93ca-38458b074ec9" />
+          </operation>
+          <operation Id="43373f40-9264-40b8-ad38-7979610f7990" name="void setAnswer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="94bf2d72-2c35-43a8-a0a7-45bc4d5bf2fd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c4157f4e-d5bf-4051-b9aa-a3561b329734" name="int Ans" direction="In" isUnique="false">
+                  <elementDefinition Id="63811315-234c-4470-baae-8e5b341d5325" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c4c99988-0b95-4f93-8165-a408f60cd493" name="int getPosision" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="36863e35-baf8-4d9c-ba93-7d5c56b4fbac" />
+          </operation>
+          <operation Id="dbbfee25-f79d-4fef-96da-74374a4e43b4" name="void setPostions" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e559bc96-5d03-43fc-af20-7921bee7ac16" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="982bf7e9-3ee3-4efe-8509-0b05fbdf7dcc" name="int Pos" direction="In" isUnique="false">
+                  <elementDefinition Id="3a3e999d-c6c9-44ac-b83c-ad25a5289031" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="10bfb855-83a3-43b7-845f-6e729ba14cdc" name="int countTest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3691f670-577d-481b-a2bd-bfb5dbad637a" />
+          </operation>
+          <operation Id="5b4720c2-2438-422d-9f50-88332018ffb1" name="char *correctAns" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ee9e2ba2-7a0a-4d2c-89e0-acdeeaf6b1d5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a6f2bb5b-aa66-4ad9-b2aa-bdfbb4522bab" name="int num" direction="In" isUnique="false">
+                  <elementDefinition Id="f8b6b5ee-f76d-4ae2-86d5-244488819fda" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7f180099-7e91-47fe-a276-15f87baab25f" name="char *getCorrectAns" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fddfbc65-7e49-4114-938e-629b4e94b64e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dba08b6f-94eb-46be-a11a-9b0a188d69ec" name="int size" direction="In" isUnique="false">
+                  <elementDefinition Id="7b5f623e-834e-45b6-8039-8692c69e8bd8" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="02d60ff7-ba47-493a-8c97-e745aed52cae" name="ModelingProject1">
+    <elementDefinition Id="bce1110d-9442-4831-8093-73b50ade9c5c" />
+  </package>
+</logicalClassDesignerModel>
