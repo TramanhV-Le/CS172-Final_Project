@@ -18,6 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ConsoleApplication1\ConsoleApplication1\Source.cpp" />
+    <ClCompile Include="..\..\ConsoleApplication1\ConsoleApplication1\Stud3nts.cpp" />
+    <ClCompile Include="..\..\ConsoleApplication1\ConsoleApplication1\T3st.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ConsoleApplication1\ConsoleApplication1\Stud3nts.h" />
+    <ClInclude Include="..\..\ConsoleApplication1\ConsoleApplication1\T3st.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EA882AAD-1CA5-4C37-B656-3B44DDAA53CB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -141,13 +150,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="cl4sses.cpp" />
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="cl4sses.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
